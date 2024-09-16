@@ -1,0 +1,23 @@
+body {
+    background-image: url('ice_cream.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.text-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+h1 {
+    color: rgb(253, 174, 187);
+    font-size: 180px;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
