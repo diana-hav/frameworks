@@ -11,3 +11,4 @@ class Fish {
     }
 }
 exports.Fish = Fish;
+//# sourceMappingURL=fish.js.map

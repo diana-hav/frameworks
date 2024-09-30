@@ -1,0 +1,1 @@
+{"version":3,"file":"fish.d.ts","sourceRoot":"","sources":["../fish.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,UAAU,CAAC;AAElC,qBAAa,IAAK,YAAW,MAAM;IAC/B,IAAI,EAAE,MAAM,CAAC;IACb,GAAG,EAAE,MAAM,CAAC;gBAEC,IAAI,EAAE,MAAM,EAAE,GAAG,EAAE,MAAM;IAKtC,IAAI,IAAI,IAAI;CAGf"}

@@ -14,3 +14,4 @@ class Bird {
     }
 }
 exports.Bird = Bird;
+//# sourceMappingURL=bird.js.map

@@ -11,3 +11,4 @@ bird.move();
 console.log(`${bird.name} says ${bird.voice()}`);
 const fish = new fish_1.Fish("Megadon", 3);
 fish.move();
+//# sourceMappingURL=t1.js.map
