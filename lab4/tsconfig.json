@@ -6,7 +6,9 @@
       "strict": true,
       "esModuleInterop": true,
       "outDir": "./dist",
-      "sourceMap": true
+      "sourceMap": true,
+      "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+      "skipLibCheck": true
     },
     "include": [
       "src"

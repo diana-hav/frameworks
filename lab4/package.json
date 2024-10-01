@@ -8,7 +8,8 @@
     "start": "webpack serve --open",
     "format": "prettier --write '**/*.{js,ts,json,md}'",
     "lint": "eslint '**/*.{js,ts}'",
-    "prepare": "husky"
+    "prepare": "husky install",
+    "eslint": "eslint . .js,.jsx,.ts,.tsx"
   },
   "private": true,
   "devDependencies": {
@@ -17,7 +18,11 @@
     "@typescript-eslint/parser": "^8.8.0",
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^x.x.x",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^15.9.0",
     "husky": "^9.1.6",
@@ -34,11 +39,15 @@
     "@types/bootstrap": "^5.2.10",
     "bootstrap": "^5.3.3"
   },
-    "lint-staged": {
-      "*.ts": [
-        "eslint --fix",
-        "prettier --write"
-      ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
-  
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache --fix",
+    "*.{ts,js,css,md}": "prettier --write",
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }
