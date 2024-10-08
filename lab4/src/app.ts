@@ -126,15 +126,6 @@ class App {
         const index = target.getAttribute('data-index');
         if (!index) return;
         const bookIndex = parseInt(index);
-
-
-
-
-
-
-
-
-
         
         if (target.classList.contains('borrow-btn')) {
             const userId = target.getAttribute('data-user-id');
