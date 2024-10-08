@@ -122,11 +122,20 @@ class App {
     }
 
     private handleBookActions(event: Event): void {
-        const target = event.target as HTMLElement;
+        let target = event.target as HTMLElement;
         const index = target.getAttribute('data-index');
         if (!index) return;
         const bookIndex = parseInt(index);
 
+
+
+
+
+
+
+
+
+        
         if (target.classList.contains('borrow-btn')) {
             const userId = target.getAttribute('data-user-id');
             userId ? this.returnBook(bookIndex, parseInt(userId)) : this.setupBorrow(bookIndex);
