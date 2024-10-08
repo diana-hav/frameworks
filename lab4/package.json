@@ -16,9 +16,9 @@
     "@eslint/js": "^9.11.1",
     "@typescript-eslint/eslint-plugin": "^8.8.0",
     "@typescript-eslint/parser": "^8.8.0",
-    "eslint": "^9.11.1",
+    "eslint": "^9.12.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^x.x.x",
@@ -41,13 +41,21 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\""
+      "pre-commit": "npx lint-staged"
     }
   },
   "lint-staged": {
-    "*.{ts,js}": "eslint --cache --fix",
-    "*.{ts,js,css,md}": "prettier --write",
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "/*": "prettier --write --ignore-unknown",
+    "/*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "mocha": {
+    "require": "ts-node/register"
   }
 }
